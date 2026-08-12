@@ -1,0 +1,259 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #0b0f19;
+    color: #e2e8f0;
+    line-height: 1.6;
+}
+
+span {
+    color: #00d2ff;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 2.2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Header & Navigation */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: rgba(11, 15, 25, 0.95);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid #1e293b;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00d2ff;
+}
+
+.nav-btn {
+    background: linear-gradient(45deg, #0052d4, #00d2ff);
+    color: #fff;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+    background: radial-gradient(circle at center, #111827 0%, #0b0f19 100%);
+}
+
+.hero-content {
+    max-width: 800px;
+    margin-top: 60px;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.btn {
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    display: inline-block;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+.primary-btn {
+    background: linear-gradient(45deg, #0052d4, #00d2ff);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.secondary-btn {
+    border: 1px solid #00d2ff;
+    color: #00d2ff;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+/* Stats Section */
+.section-desc {
+    text-align: center;
+    color: #94a3b8;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.stat-box {
+    background: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    min-width: 200px;
+}
+
+.stat-box i {
+    font-size: 2.5rem;
+    color: #00d2ff;
+    margin-bottom: 10px;
+}
+
+/* Services Section */
+.services-section {
+    background-color: #0f172a;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background-color: #1e293b;
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid #334155;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    border-color: #00d2ff;
+}
+
+.service-card i {
+    font-size: 2rem;
+    color: #00d2ff;
+    margin-bottom: 15px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service-card p {
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-group {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 5px;
+    color: #fff;
+    outline: none;
+}
+
+.contact-form input:focus, .contact-form textarea:focus {
+    border-color: #00d2ff;
+}
+
+/* Footer */
+footer {
+    background-color: #070a12;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1e293b;
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Responsive Setup */
+@media (max-width: 768px) {
+    nav, .nav-btn {
+        display: none;
+    }
+    .hero-content h1 {
+        font-size: 2.2rem;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+}
