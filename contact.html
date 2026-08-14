@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | DIGI CODEWEB CREATORS</title>
+    <link rel="icon" type="image/png" href="Logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <a href="index.html" class="logo">
+            <img src="Logo.png" alt="DIGI CODEWEB CREATORS">
+            <div class="logo-text">
+                <span class="brand-top">DIGI CODEWEB</span>
+                <span class="brand-bottom">CREATORS</span>
+            </div>
+        </a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="courses.html">Courses & Internships</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="tel:+919828486633" class="nav-btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+    </header>
+
+    <div class="page-header">
+        <h1>Get in <span>Touch</span></h1>
+        <p>Reach out for business web/app solutions, IT courses, or internship applications.</p>
+    </div>
+
+    <main class="container">
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 40px; margin-top: 10px;">
+            
+            <!-- Direct Contact Card -->
+            <div class="card" style="display: flex; flex-direction: column; gap: 24px; justify-content: center;">
+                <h3 style="color: #fff; font-size: 1.5rem; margin-bottom: 5px;">Contact <span>Information</span></h3>
+                
+                <div>
+                    <p style="color: #00d2ff; font-weight: 600; margin-bottom: 4px;">
+                        <i class="fas fa-map-marker-alt"></i> Office Address
+                    </p>
+                    <p style="color: #cbd5e1; line-height: 1.5;">
+                        Kalyan Circle, Near Railway Station,<br>
+                        Sikar - 332001 (Rajasthan)
+                    </p>
+                </div>
+
+                <div>
+                    <p style="color: #00d2ff; font-weight: 600; margin-bottom: 4px;">
+                        <i class="fas fa-phone-alt"></i> Phone / Mobile
+                    </p>
+                    <p>
+                        <a href="tel:+919828486633" style="color: #cbd5e1; text-decoration: none; font-size: 1.05rem;">
+                            +91 98284 86633
+                        </a>
+                    </p>
+                </div>
+
+                <div>
+                    <p style="color: #00d2ff; font-weight: 600; margin-bottom: 4px;">
+                        <i class="fab fa-whatsapp"></i> Quick WhatsApp
+                    </p>
+                    <p>
+                        <a href="https://wa.me/919828486633" target="_blank" style="color: #25d366; text-decoration: none; font-weight: 600;">
+                            Chat with us on WhatsApp &rarr;
+                        </a>
+                    </p>
+                </div>
+
+                <div>
+                    <p style="color: #00d2ff; font-weight: 600; margin-bottom: 4px;">
+                        <i class="fas fa-envelope"></i> Email Support
+                    </p>
+                    <p>
+                        <a href="mailto:info@digicodewebcreators.co.in" style="color: #cbd5e1; text-decoration: none;">
+                            info@digicodewebcreators.co.in
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Inquiry Form -->
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your request has been submitted.');">
+                <div class="input-group">
+                    <input type="text" placeholder="Your Full Name" required>
+                    <input type="email" placeholder="Your Email Address" required>
+                </div>
+                <input type="tel" placeholder="Your Phone Number" required>
+                <select required>
+                    <option value="" disabled selected>Select Inquiry Type</option>
+                    <option value="business">Business / Web & App Development</option>
+                    <option value="course">IT Training / Course Admission</option>
+                    <option value="internship">Student Internship Program</option>
+                    <option value="other">General Inquiry</option>
+                </select>
+                <input type="text" placeholder="Subject" required>
+                <textarea rows="4" placeholder="Your Message or Application Details..." required></textarea>
+                <button type="submit" class="btn primary-btn">Send Message</button>
+            </form>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p style="margin-bottom: 8px;">
+            <i class="fas fa-map-marker-alt" style="color: #00d2ff;"></i> Kalyan Circle, Near Railway Station, Sikar - 332001 (Rajasthan) &nbsp;|&nbsp; 
+            <i class="fas fa-phone-alt" style="color: #00d2ff;"></i> <a href="tel:+919828486633">+91 98284 86633</a> &nbsp;|&nbsp;
+            <i class="fas fa-envelope" style="color: #00d2ff;"></i> <a href="mailto:info@digicodewebcreators.co.in">info@digicodewebcreators.co.in</a>
+        </p>
+        <p>&copy; 2026 DIGI CODEWEB CREATORS. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
