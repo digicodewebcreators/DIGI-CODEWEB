@@ -366,22 +366,74 @@ footer a:hover {
     color: #00d2ff;
 }
 
-/* Responsive Setup */
+/* Responsive Mobile Setup */
 @media (max-width: 860px) {
     header {
-        flex-direction: column;
-        gap: 15px;
-        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        padding: 12px 5%;
+        position: fixed;
     }
+
+    /* 1. लोगो Top-Left में रहेगा */
+    .logo {
+        order: 1;
+        flex: 0 1 auto;
+    }
+
+    .logo img {
+        height: 38px;
+        width: 38px;
+    }
+
+    .logo-text .brand-top {
+        font-size: 0.8rem;
+    }
+
+    .logo-text .brand-bottom {
+        font-size: 0.9rem;
+    }
+
+    /* 2. Call Now बटन Top-Right में जाएगा */
+    .nav-btn {
+        order: 2;
+        margin-left: auto;
+        padding: 6px 14px;
+        font-size: 0.85rem;
+    }
+
+    /* 3. नेविगेशन मेन्यू पूरे विड्थ में नीचे आ जाएगा */
+    nav {
+        order: 3;
+        width: 100%;
+        margin-top: 8px;
+    }
+
     nav ul {
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        gap: 15px;
+        gap: 10px 15px;
+        padding-top: 8px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
     }
+
+    nav ul li a {
+        font-size: 0.85rem;
+    }
+
+    /* Hero & Content spacing fix for mobile */
+    .hero {
+        padding-top: 120px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
     .input-group {
         flex-direction: column;
-    }
-    .hero-content h1 {
-        font-size: 2.2rem;
     }
 }
